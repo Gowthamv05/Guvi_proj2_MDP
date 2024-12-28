@@ -10,7 +10,7 @@ def load_model(model_path):
 
 Kidney_model=load_model("https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_kidney.pkl")
 liver_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_Liver.pkl')
-parkinson_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/blob/main/model_parkinson.pkl')
+parkinson_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_parkinson.pkl')
 
 
 st.title('Medical Condition Prediction App')
