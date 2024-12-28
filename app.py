@@ -10,7 +10,7 @@ def load_model(model_path):
 
 Kidney_model=load_model("https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_kidney.pkl")
 liver_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_Liver.pkl')
-parkinson_model = load_model('C:\Users\sisir\Streamlit_proj\MDP_proj\model_parkinson.pkl')
+parkinson_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/blob/main/model_parkinson.pkl')
 
 
 st.title('Medical Condition Prediction App')
@@ -25,18 +25,18 @@ if condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
     
    
-    age = st.number_input('Age', min_value=12)
+    age = st.number_input('Age', min_value=1)
     gender_select = st.selectbox('Gender', ['Male', 'Female'])
     gender_map={'Male':1, 'Female':0}
     gender=gender_map.get(gender_select)
-    bilirubin = st.number_input('Total Bilirubin',min_value=1)
-    Direct_Bilirubin=st.number_input('Direct_Bilirubin',min_value=1)
-    alkaline_phosphotase = st.number_input('Alkaline Phosphotase',min_value=1)
-    Alamine_Aminotransferase= st.number_input('Alamine_Aminotransferase',min_value=1)
-    Aspartate_Aminotransferase=st.number_input('Aspartate_Aminotransferase',min_value=1)
-    Total_Protiens=st.number_input('Total_Protiens',min_value=1)
-    albumin = st.number_input('Albumin',min_value=1)
-    Albumin_and_Globulin_Ratio=st.number_input('Albumin_and_Globulin_Ratio',min_value=1)
+    bilirubin = st.number_input('Total Bilirubin',min_value=0)
+    Direct_Bilirubin=st.number_input('Direct_Bilirubin',min_value=0)
+    alkaline_phosphotase = st.number_input('Alkaline Phosphotase',min_value=0)
+    Alamine_Aminotransferase= st.number_input('Alamine_Aminotransferase',min_value=0)
+    Aspartate_Aminotransferase=st.number_input('Aspartate_Aminotransferase',min_value=0)
+    Total_Protiens=st.number_input('Total_Protiens',min_value=0)
+    albumin = st.number_input('Albumin',min_value=0)
+    Albumin_and_Globulin_Ratio=st.number_input('Albumin_and_Globulin_Ratio',min_value=0)
     
     if st.button('Predict'):
         data={
