@@ -9,7 +9,7 @@ def load_model(model_path):
 
 
 Kidney_model=load_model("C:\Users\sisir\Streamlit_proj\MDP_proj\model_kidney.pkl")
-liver_model = load_model('C:\Users\sisir\Streamlit_proj\MDP_proj\model_Liver.pkl')
+liver_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_Liver.pkl')
 parkinson_model = load_model('C:\Users\sisir\Streamlit_proj\MDP_proj\model_parkinson.pkl')
 
 
