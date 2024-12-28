@@ -8,9 +8,9 @@ def load_model(model_path):
         return pickle.load(file)
 
 
-Kidney_model=load_model("https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_kidney.pkl")
-liver_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_Liver.pkl')
-parkinson_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_parkinson.pkl')
+#Kidney_model=load_model("https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_kidney.pkl")
+liver_model = load_model('https://raw.githubusercontent.com/Gowthamv05/Guvi_proj2_MDP/main/model_Liver.pkl')
+#parkinson_model = load_model('https://github.com/Gowthamv05/Guvi_proj2_MDP/main/model_parkinson.pkl')
 
 
 st.title('Medical Condition Prediction App')
