@@ -10,8 +10,8 @@ def load_model(model_path):
 
 # Load models
 Kidney_model = load_model("model_kidney.pkl")
-liver_model = load_model(r'C:\Users\sisir\.streamlit\eenv\Scripts\model_Liver.pkl')
-parkinson_model = load_model(r'C:\Users\sisir\.streamlit\eenv\Scripts\model_parkinson.pkl')
+liver_model = load_model("model_Liver.pkl')
+parkinson_model = load_model("model_parkinson.pkl')
 
 # App title
 st.title('Medical Condition Prediction App 🩺🏥')
